@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kurban">
+      <div class="container">
+        <div class="kücükbas">
+          <h2>Küçükbaş Hayvan</h2>
+          <select id="kucuk">
+            <option selected disabled hidden></option>
+            <option  value="Koyun" >Koyun</option>
+            <option  value="Keci">Keçi</option>
+          </select>
+          <input id="kilo" type="number" placeholder="Hayvanın Canlı Kilosu" />
+          <button  style="margin-left: 5px; border-radius: 10px; padding: 7px 15px; border: none; color: white; background-color: rgb(57, 57, 207);" type="button" onclick="hesaplaKucuk()">HESAPLA</button>
+          <input style="margin-left: 5px;  border-radius: 10px; padding: 7px 15px; border: none; color: white; background-color: rgb(57, 57, 207);" type="reset" value="TEMİZLE" onclick="temizleKucuk()" />
+          <div id="kucuk-karkas" style="margin-top: 10px; color: rgb(5, 5, 5); font-size: 20px;  font-weight: bold;"></div>
+          <div id="kucuk-fiyat" style="margin-top: 10px; color: rgb(9, 9, 9); font-size: 20px;  font-weight: bold;"></div>
+        </div>
+        <div class="büyükbas">
+            <h2>Büyükbaş Hayvan</h2>
+            <select id="buyuk">
+              <option selected disabled hidden></option>
+              <option value="Sigir">Sığır</option>
+              <option value="Manda">Manda</option>
+              <option value="Deve">Deve</option>
+            </select>
+            <input id="buyuk-kilo" type="number" placeholder="Hayvanın Canlı Kilosu" />
+            <select id="hisse">
+              <option selected disabled hidden>Hisse Sayısı</option>
+              <option value="1">1 Hisseli</option>
+              <option value="2">2 Hisseli</option>
+              <option value="3">3 Hisseli</option>
+              <option value="4">4 Hisseli</option>
+              <option value="5">5 Hisseli</option>
+              <option value="6">6 Hisseli</option>
+              <option value="7">7 Hisseli</option>
+            </select>
+            <button style="margin-left: 5px;  border-radius: 10px; padding: 7px 15px; border: none; color: white; background-color: rgb(57, 57, 207);" type="button" onclick="hesaplaBuyuk()">HESAPLA</button>
+            <input style="margin-left: 5px;  border-radius: 10px; padding: 7px 15px; border: none; color: white; background-color: rgb(57, 57, 207);" type="reset" value="TEMİZLE" onclick="temizleKucuk()" />
+            <div id="buyuk-karkas" style="margin-top: 10px; color: rgb(3, 3, 3); font-size: 18px; font-weight: bold;"></div>
+            <div id="buyuk-fiyat" style="margin-top: 10px; color: rgb(0, 0, 0); font-size: 18px;  font-weight: bold;"></div>
+            <div id="hisse-fiyat" style="margin-top: 10px; color: rgb(0, 0, 0); font-size: 18px;  font-weight: bold;;"></div>
+          </div>
+        </div>
+       
+    </div>
+   
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+
+
+  </body>
+</html>
